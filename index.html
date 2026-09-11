@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh'N'Fluffy - Premium Bakery & Sweets</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-bread-slice"></i>
+                Fresh'N'Fluffy
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Baked with Love,<br>Served with Joy</h1>
+            <p class="hero-subtitle">Experience the finest bakery products and traditional sweets made fresh daily</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">Explore Products</a>
+                <a href="#contact" class="btn btn-secondary">Order Now</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wheat"></i>
+                    </div>
+                    <h3>Premium Ingredients</h3>
+                    <p>We use only the finest quality ingredients sourced from trusted suppliers</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Made with Love</h3>
+                    <p>Every product is crafted with care and passion by our expert bakers</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Fresh Delivery</h3>
+                    <p>Get your favorite treats delivered fresh to your doorstep</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Award Winning</h3>
+                    <p>Recognized for excellence in baking and customer satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container about-container">
+            <div class="about-images">
+                <div class="about-img-main">
+                    <div class="placeholder-img">
+                        <i class="fas fa-store"></i>
+                    </div>
+                </div>
+                <div class="about-img-secondary">
+                    <div class="placeholder-img small">
+                        <i class="fas fa-baker-hat"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="section-tag">Our Story</span>
+                <h2 class="section-title">Tradition Meets Innovation</h2>
+                <p class="about-text">
+                    Welcome to Fresh'N'Fluffy, where traditional recipes meet modern baking techniques. 
+                    For over 20 years, we've been serving our community with the freshest breads, 
+                    pastries, and traditional sweets.
+                </p>
+                <p class="about-text">
+                    Our master bakers combine time-honored recipes with innovative flavors to create 
+                    unique treats that delight customers of all ages. From classic favorites to 
+                    seasonal specialties, every product is made fresh daily.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Products</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                </div>
+                <a href="#products" class="btn btn-primary">View Our Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Products</span>
+                <h2 class="section-title">Fresh from the Oven</h2>
+                <p class="section-subtitle">Discover our wide range of freshly baked goods and traditional sweets</p>
+            </div>
+            <div class="product-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="bread">Breads</button>
+                <button class="category-btn" data-category="pastries">Pastries</button>
+                <button class="category-btn" data-category="sweets">Traditional Sweets</button>
+                <button class="category-btn" data-category="cakes">Cakes</button>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-category="bread">
+                    <div class="product-image">
+                        <div class="placeholder-img">
+                            <i class="fas fa-bread-slice"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Artisan Bread</h3>
+                        <p>Freshly baked sourdough and whole wheat bread</p>
+                        <span class="price">$5.99</span>
+                    </div>
+                </div>
+                <div class="product-card" data-category="pastries">
+                    <div class="product-image">
+                        <div class="placeholder-img">
+                            <i class="fas fa-cookie"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Croissants</h3>
+                        <p>Buttery, flaky French-style croissants</p>
+                        <span class="price">$3.99</span>
+                    </div>
+                </div>
+                <div class="product-card" data-category="sweets">
+                    <div class="product-image">
+                        <div class="placeholder-img">
+                            <i class="fas fa-candy-cane"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Gulab Jamun</h3>
+                        <p>Traditional Indian sweet in sugar syrup</p>
+                        <span class="price">$8.99</span>
+                    </div>
+                </div>
+                <div class="product-card" data-category="cakes">
+                    <div class="product-image">
+                        <div class="placeholder-img">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Custom Cakes</h3>
+                        <p>Bespoke cakes for special occasions</p>
+                        <span class="price">$29.99</span>
+                    </div>
+                </div>
+                <div class="product-card" data-category="pastries">
+                    <div class="product-image">
+                        <div class="placeholder-img">
+                            <i class="fas fa-pie"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Danish Pastries</h3>
+                        <p>Assorted fruit-filled Danish pastries</p>
+                        <span class="price">$4.49</span>
+                    </div>
+                </div>
+                <div class="product-card" data-category="sweets">
+                    <div class="product-image">
+                        <div class="placeholder-img">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Barfi Mix</h3>
+                        <p>Assorted traditional milk-based sweets</p>
+                        <span class="price">$12.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Offer</span>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">More than just a bakery - we're here for all your celebration needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Custom Cakes</h3>
+                    <p>Design your dream cake for weddings, birthdays, and special events</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Gift Boxes</h3>
+                    <p>Curated gift boxes perfect for festivals and celebrations</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Catering</h3>
+                    <p>Full catering services for events and corporate functions</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Baking Classes</h3>
+                    <p>Learn the art of baking from our expert pastry chefs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our Customers Say</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The best bakery in town! Their croissants are absolutely divine and the staff is always friendly."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>Regular Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Ordered a custom cake for my daughter's wedding. It was not only beautiful but tasted amazing!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <span>Event Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Their traditional sweets remind me of home. Quality is consistently excellent."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Priya Patel</h4>
+                            <span>Regular Customer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Visit Us Today</h2>
+                <p class="contact-text">We'd love to hear from you. Visit our store or get in touch for orders and inquiries.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>123 Baker Street, Food District, City 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@freshnfluffy.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon-Sun: 7AM - 9PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-yelp"></i></a>
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <select>
+                            <option value="">Select Service</option>
+                            <option value="order">Place Order</option>
+                            <option value="custom">Custom Cake</option>
+                            <option value="catering">Catering</option>
+                            <option value="other">Other Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="#" class="footer-logo">
+                        <i class="fas fa-bread-slice"></i>
+                        Fresh'N'Fluffy
+                    </a>
+                    <p>Your neighborhood bakery bringing fresh, handcrafted baked goods and traditional sweets since 2004.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-products">
+                    <h4>Popular Products</h4>
+                    <ul>
+                        <li><a href="#">Artisan Breads</a></li>
+                        <li><a href="#">French Pastries</a></li>
+                        <li><a href="#">Traditional Sweets</a></li>
+                        <li><a href="#">Custom Cakes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for updates and special offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fresh'N'Fluffy. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
